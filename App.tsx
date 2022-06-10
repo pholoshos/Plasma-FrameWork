@@ -17,7 +17,7 @@ export default function App() {
     <NavigationContainer>
 
       <StatusBar style={theme.mode} />
-      <Stack.Navigator screenOptions={{headerBackTitle:'',headerTitle: (props) => <Navbar  {...props} /> }} initialRouteName='Home' >
+      <Stack.Navigator screenOptions={{ headerBackTitle: '',headerStyle: { backgroundColor: theme.primaryColor}, headerTitle: (props) => <Navbar  {...props} /> }} initialRouteName='Home' >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="Dashboard" component={Dashboard} />

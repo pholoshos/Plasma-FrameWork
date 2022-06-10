@@ -7,5 +7,21 @@ export const style = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    navbar_container : {
+      flexDirection: 'column',    
+        
+    },
+    navbar_children : {
+      flexDirection: 'row'
+    },
+    navbar_child : {
+      padding : 4,
+      fontSize: 14
+    },
+    navbar_title : {
+      fontWeight : 'bold',
+      margin : 5
+    }
   });
+
   
