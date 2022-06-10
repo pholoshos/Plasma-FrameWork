@@ -2,11 +2,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text } from 'react-native';
 import { Navbar } from './src/components';
 import { Dashboard, Feed, Settings, About, Login, Register, Profile, ForgotPassword } from './src/screens';
 import { Home } from './src/screens/home';
-import { theme, style } from './src/values';
+import { theme } from './src/values';
 
 const Stack = createNativeStackNavigator();
 
