@@ -7,3 +7,4 @@ export  const Button = (props : IButton)=>{
         <Text>{props.label}</Text>
     </Pressable>
 } 
+
