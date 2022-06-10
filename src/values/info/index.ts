@@ -6,3 +6,7 @@ export  const info : IAppInfo = {
     version : '1',
     
 }
+
+export const API_INFO : IAppInfo = {
+    base_url : 'http://localhost:3000'
+}
