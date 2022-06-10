@@ -1,8 +1,10 @@
 import { ITheme } from "../../modal";
 
 //app theme here
-const Theme : ITheme = {
+export const theme : ITheme = {
     primaryColor : '',
     secondaryColor : '',
-    textColor : ''
+    textColor : '',
+    mode : 'light'
+
 }

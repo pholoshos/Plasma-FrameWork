@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { useContext, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableHighlightComponent, View } from 'react-native';
 import { user } from './src/context/user';
 import { IUser } from './src/modal/user';
 import { Home } from './src/screens/home';
+import {theme} from './src/styles/theme'
 
 export default function App() {
   const userContext = useContext(user)
@@ -16,10 +17,8 @@ export default function App() {
   return (
     <user.Provider value={userData}>
     <View style={styles.container}>
-      <Text>{}</Text>
       <Home></Home>
-
-      <StatusBar style="auto" />
+      <StatusBar style={theme.mode} />
     </View>
     </user.Provider>
 
