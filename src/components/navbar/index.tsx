@@ -1,7 +1,7 @@
 import { Link } from "@react-navigation/native";
 import React from "react"
-import { View, Text } from "react-native"
-import { info, style } from "../../values";
+import { View, Text, StyleSheet } from "react-native"
+import { info } from "../../values";
 
 interface IProps {
     children: string;
@@ -20,3 +20,21 @@ export const Navbar = (props: IProps) => {
     </View>
 
 } 
+
+const style = StyleSheet.create({
+    navbar_container: {
+        flexDirection: 'column',
+    
+      },
+      navbar_children: {
+        flexDirection: 'row'
+      },
+      navbar_child: {
+        padding: 10,
+        fontSize: 14
+      },
+      navbar_title: {
+        fontWeight: 'bold',
+        margin: 5
+      },
+})
