@@ -15,7 +15,7 @@ export const style = StyleSheet.create({
       flexDirection: 'row'
     },
     navbar_child : {
-      padding : 4,
+      padding : 10,
       fontSize: 14
     },
     navbar_title : {
