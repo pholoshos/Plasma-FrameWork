@@ -6,5 +6,6 @@ export {Profile} from './profile';
 export {About} from './about';
 export {Settings} from './settings';
 export {Register} from './register';
+export {ForgotPassword} from './forgotPassword';
 
 /* add new screens below*/
