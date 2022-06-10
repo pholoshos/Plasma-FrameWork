@@ -1,12 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
+import { useContext, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { user } from './src/context/user';
+import { IUser } from './src/modal/user';
+import { Home } from './src/screens/home';
 
 export default function App() {
+  const userContext = useContext(user)
+  
+  const [userData,setUser] = useState<IUser>({
+    username: 'Pholosho',
+    phone : '0720648709'
+  })
+
   return (
+    <user.Provider value={userData}>
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>{}</Text>
+      <Home></Home>
+
       <StatusBar style="auto" />
     </View>
+    </user.Provider>
+
   );
 }
 
