@@ -1,9 +1,9 @@
 
 import { View, Text } from "react-native"
 
-export const Home = () => {
+export const Feed= () => {
     return <View>
-        <Text>Home</Text>
+        <Text>Feed</Text>
     </View>
 
 }

@@ -1,9 +1,9 @@
 
 import { View, Text } from "react-native"
 
-export const Home = () => {
+export const Dashboard = () => {
     return <View>
-        <Text>Home</Text>
+        <Text>Dashboard</Text>
     </View>
 
 }
