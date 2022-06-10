@@ -1,6 +1,12 @@
 import React from "react"
-import { View } from "react-native"
+import { View ,Text} from "react-native"
 
-export  const Navbar = ()=>{
-    return <View></View>
+interface IProps {
+    children: string;
+    tintColor?: string | undefined;
+}
+export  const Navbar = (props : IProps)=>{
+    return <View>
+        <Text>NavBar</Text>
+    </View>
 } 
