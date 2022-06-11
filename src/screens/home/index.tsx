@@ -1,6 +1,5 @@
 
 import { View, Text, Pressable } from "react-native";
-import { Link } from '@react-navigation/native';
 import { Button, Card } from "../../components";
 
 export const Home = () => {

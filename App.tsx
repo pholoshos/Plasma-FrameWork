@@ -12,7 +12,6 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-
     <NavigationContainer>
 
       <StatusBar style={theme.mode} />
