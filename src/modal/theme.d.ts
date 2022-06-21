@@ -5,5 +5,6 @@ export interface ITheme {
     darkModePrimaryColor? : string;
     darkModeSecondaryColor? : string;
     darkModeTextColor? : string;
-    mode : 'dark' | 'light'|'auto'|'inverted'
+    mode : 'dark' | 'light'|'auto'|'inverted',
+    white? : string
 }
