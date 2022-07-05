@@ -1,7 +1,7 @@
 export { Button } from "./button";
 export { Navbar } from "./navbar";
 export { Alert } from "./alert";
-export { Image } from "./image";
+export { ImageView } from "./imageView";
 export { Card } from "./card";
 export {ScrollLayout} from "./scrollLayout";
 export {Banner} from "./banner"
