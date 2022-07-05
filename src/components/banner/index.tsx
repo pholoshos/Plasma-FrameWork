@@ -7,16 +7,17 @@ interface IBanner {
     description?: string;
     imageUrl?: string;
     background?: string;
+    textColor? : string;
 }
-export const Banner = ({ imageUrl, title, description, background } : IBanner) => {
+export const Banner = ({ imageUrl, title, description, background,textColor } : IBanner) => {
     return <View style={style.container}>
         <ImageBackground style={style.background} source={{uri:background}}></ImageBackground>
         <View>
             <Image style={style.icon} source={{ uri: imageUrl }}></Image>
         </View>
         <View>
-            <Text style={appStyle.title}>{title}</Text>
-            <Text>{description}</Text>
+            <Text style={{...appStyle.title,color:textColor}}>{title}</Text>
+            <Text style={{color:textColor}}>{description}</Text>
         </View>
     </View>
 } 
