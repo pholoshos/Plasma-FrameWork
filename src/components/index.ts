@@ -11,3 +11,5 @@ export {Input } from "./input";
 export {Modal} from "./modal";
 export {Subtitle} from "./subtitle";
 export {Title} from "./title";
+export {Tabs} from "./tabs";
+export {MapContainer} from './mapContainer'
