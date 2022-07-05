@@ -10,7 +10,10 @@ export const Home = () => {
     return <View>
         <ScrollLayout>
             <Text>Home</Text>
-            <ImageView mode="large" title="hello world"  url="https://reactnative.dev/img/tiny_logo.png"></ImageView>
+            <ImageView mode="medium" url="https://reactnative.dev/img/tiny_logo.png"/>
+            <ImageView mode="large" url="https://reactnative.dev/img/tiny_logo.png"/>
+            <ImageView mode="medium" url="https://reactnative.dev/img/tiny_logo.png"/>
+            <ImageView mode="medium" title="hello world" url="https://reactnative.dev/img/tiny_logo.png"/>
 
         </ScrollLayout>
 

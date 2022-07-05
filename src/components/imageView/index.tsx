@@ -7,9 +7,10 @@ interface IImageView {
     mode: 'small' | 'medium' | 'large';
     description?: string;
     title?: string;
+
 }
 
-export const ImageView = ({ url, mode, title, description }: IImageView) => {
+export const ImageView = ({ url, mode, title, description}: IImageView) => {
     return <View style={
         style.container
     }>
@@ -26,8 +27,10 @@ export const ImageView = ({ url, mode, title, description }: IImageView) => {
 
 const style = StyleSheet.create({
     container: {
-        margin: 10
+        margin: 10,
+     
     },
+
     smallImage: {
         height: 100,
         width: 100
