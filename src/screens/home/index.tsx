@@ -1,6 +1,6 @@
 
 import { View, Text, Pressable } from "react-native";
-import { Button, Card, ImageView, ScrollLayout } from "../../components";
+import { Button, Card, ImageView, ScrollLayout ,Banner} from "../../components";
 
 export const Home = () => {
     const clickButton = () => {
@@ -9,11 +9,11 @@ export const Home = () => {
 
     return <View>
         <ScrollLayout>
-            <Text>Home</Text>
-            <ImageView mode="medium" url="https://reactnative.dev/img/tiny_logo.png"/>
+            <Banner textColor='white' imageUrl="https://reactnative.dev/img/tiny_logo.png" background="https://reactnative.dev/img/tiny_logo.png" title="hello banner"  description="hello world description"></Banner>
+            <ImageView mode="small" url="https://reactnative.dev/img/tiny_logo.png"/>
             <ImageView mode="large" url="https://reactnative.dev/img/tiny_logo.png"/>
             <ImageView mode="medium" url="https://reactnative.dev/img/tiny_logo.png"/>
-            <ImageView mode="medium" title="hello world" url="https://reactnative.dev/img/tiny_logo.png"/>
+
 
         </ScrollLayout>
 

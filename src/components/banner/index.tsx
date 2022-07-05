@@ -1,6 +1,42 @@
 import React from "react"
-import { View } from "react-native"
+import { View, Text, Image,StyleSheet, ImageBackground } from "react-native"
+import { appStyle } from "../../values";
 
-export  const Banner = ()=>{
-    return <View></View>
+interface IBanner {
+    title: string;
+    description?: string;
+    imageUrl?: string;
+    background?: string;
+}
+export const Banner = ({ imageUrl, title, description, background } : IBanner) => {
+    return <View style={style.container}>
+        <ImageBackground style={style.background} source={{uri:background}}></ImageBackground>
+        <View>
+            <Image style={style.icon} source={{ uri: imageUrl }}></Image>
+        </View>
+        <View>
+            <Text style={appStyle.title}>{title}</Text>
+            <Text>{description}</Text>
+        </View>
+    </View>
 } 
+
+const style = StyleSheet.create({
+    container : {
+        padding : 10,
+        borderRadius  : 4,
+        flexDirection : 'row'
+    
+    
+    },
+    background : {
+        position : 'absolute',
+        height : '120%',
+        width : '100%',
+    },
+    icon : {
+        width : 45,
+        height : 45,
+        margin : 5,
+    }
+})

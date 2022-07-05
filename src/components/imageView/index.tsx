@@ -20,7 +20,7 @@ export const ImageView = ({ url, mode, title, description}: IImageView) => {
             source={
                 { uri: url }
             } />
-        <Text style={style.title}>{title}</Text>
+        <Text style={appStyle.title}>{title}</Text>
         <Text>{description}</Text>
     </View>
 }
@@ -43,6 +43,4 @@ const style = StyleSheet.create({
         height: 300,
         width: 300
     },
-
-    title: appStyle.title
 })
