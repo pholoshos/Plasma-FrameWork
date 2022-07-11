@@ -7,6 +7,10 @@ export  const info : IAppInfo = {
     
 }
 
+
 export const API_INFO : IAppInfo = {
     base_url : 'http://localhost:3000'
 }
+
+//update this if you are using tomtom maps
+export const tomTomMapKey = "nO4f0clUHg9bsPxddU9CARKAwL67LcEh";

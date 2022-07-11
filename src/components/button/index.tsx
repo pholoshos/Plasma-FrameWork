@@ -5,19 +5,19 @@ import { theme } from "../../values"
 
 export const Button = (props: IButton) => {
     return <Pressable onPress={(event) => props.onClick(event)} style={{ ...style.button, backgroundColor: props.color ? props.color : theme.primaryColor }}>
-        <Text >{props.label}</Text>
+        <Text style={{color:'white'}} >{props.label}</Text>
     </Pressable>
 }
 
 export const style = StyleSheet.create({
     button: {
         borderRadius: 8,
-        width: 100,
+        width: '98%',
         padding: 4,
         margin: 4,
         justifyContent: 'center',
         alignItems: 'center',
-        height: 30,
+        height: 45,
 
     }
 });

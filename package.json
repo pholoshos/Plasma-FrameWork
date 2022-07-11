@@ -20,7 +20,8 @@
     "react-native-maps": "0.30.2",
     "react-native-router-flux": "^4.3.1",
     "react-native-web": "0.17.7",
-    "react-native-webview": "11.18.1"
+    "react-native-webview": "11.18.1",
+    "expo-location": "~14.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

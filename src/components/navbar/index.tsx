@@ -31,7 +31,9 @@ const style = StyleSheet.create({
       },
       navbar_child: {
         padding: 10,
-        fontSize: 14
+        fontSize: 14,
+        color: 'white'
+        
       },
       navbar_title: {
         fontWeight: 'bold',
